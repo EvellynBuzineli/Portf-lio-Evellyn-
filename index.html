@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png.png" alt="avatar da Evellyn" class="rounded-circle" width="150" height="150">
+        <p class="lead">Eu sou Evellyn Buzineli</p>
+        <h1>Eu estudo programação na plataforma Alura</h1>
+        <p>Sou estudante do terceiro ano do ensino médio e, atualmente, estou aprimorando meus conhecimentos
+em programação por meio da plataforma Alura. Já realizei projetos utilizando as linguagens 
+Scratch, HTML, p5.js e o ambiente de desenvolvimento Visual Studio Code (VSCode). Esses projetos 
+me proporcionaram uma sólida compreensão de conceitos fundamentais de programação e desenvolvimento web, 
+além de me permitir explorar diferentes abordagens criativas na resolução de problemas.</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">P5js</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Tetris.jpg" class="card-img-top" alt="Imagem do projeto RitmoMemória">
+                    <div class="card-body">
+                        <h5 class="card-title">RitmoMemória: Desafio de Notas</h5>
+                        <p class="card-text">Inspirado no jogo Genius, este projeto usa p5.js para testar sua memória auditiva.
+                            Sequências de cores e sons são reproduzidas, e você precisa repetir corretamente. Errou? O desafio recomeça.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/download.jpg" class="card-img-top" alt="Imagem do projeto Jornada Interativa">
+                    <div class="card-body">
+                        <h5 class="card-title">Jornada Interativa: Emoções no Espaço</h5>
+                        <p class="card-text">Uma experiência feita com p5.js onde o usuário muda o universo clicando nos planetas.
+                            Cores e sons reagem em tempo real, promovendo criatividade e relaxamento visual.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/images.jpg" class="card-img-top" alt="Imagem do projeto ClickRecicle">
+                    <div class="card-body">
+                        <h5 class="card-title">ClickRecicle: Jogo da Reciclagem</h5>
+                        <p class="card-text">Um jogo educativo desenvolvido com p5.js em que o jogador arrasta itens para
+                            as lixeiras corretas. Uma forma divertida de aprender sobre sustentabilidade e descarte consciente.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">RitmoMemória: Desafio de Notas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Inspirado no jogo Genius, este projeto usa p5.js para testar sua memória auditiva. Sequências de cores e sons são reproduzidas,
+                        e você precisa repetir corretamente. A cada acerto, a sequência aumenta, tornando tudo mais desafiador e estimulante.</p>
+                    <p>Esse projeto foi desenvolvido com foco em lógica de repetição, interação visual e sonora. Uma ótima forma de treinar a memória.</p>
+                    <img src="img/Tetris.jpg" class="img-fluid w-100" alt="Imagem representativa do jogo de memória rítmica">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/Evellyn_Buzineli/sketches/nSyXkJbkF">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jornada Interativa: Emoções no Espaço</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uma jornada feita com p5.js. Ao clicar nas esferas planetárias, o usuário muda as cores do espaço e ouve sons diferentes.
+                        Cada planeta representa uma emoção com paletas e tons únicos.</p>
+                    <p>Uma experiência sensorial e criativa com programação visual, ideal para explorar interações e sons no navegador.</p>
+                    <img src="img/download.jpg" class="img-fluid w-100" alt="Imagem representativa da jornada no espaço">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/Evellyn_Buzineli/sketches/gXMa6iCZg">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ClickRecicle: Jogo da Reciclagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>ClickRecicle é um jogo educativo feito com p5.js. O jogador deve arrastar objetos para as lixeiras corretas,
+                        aprendendo de forma divertida sobre reciclagem e meio ambiente.</p>
+                    <p>O projeto reforça a conscientização ambiental de forma lúdica, utilizando lógica de colisão, arrastar e soltar, pontuação e feedback visual.</p>
+                    <img src="img/images.jpg" alt="Projeto ClickRecicle" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/Evellyn_Buzineli/sketches/j3uXq4wNo">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/EvellynBuzineli">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Evellyn Buzineli</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+                      </html>
